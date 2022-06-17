@@ -36,7 +36,7 @@ const Navbar = ()=>{
                             <div className='points'>100pts</div>
                         </div>
                         <div className='user_pic'>
-                            <img src="#" alt="" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" />
                         </div>
                     </div>
                 </div>
