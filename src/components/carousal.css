@@ -1,0 +1,52 @@
+.carousal {
+  width: 100%;
+  height: 60%;
+  background-color: cyan;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousal .layer {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.carousal__inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.carousal__inner .image_container {
+  height: 100%;
+  width: 100%;
+  border: 3px solid red;
+  position: absolute;
+  -webkit-transition: 1.5s linear ease-in-out;
+  transition: 1.5s linear ease-in-out;
+}
+
+.carousal__inner .image_container img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=carousal.css.map */

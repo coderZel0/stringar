@@ -1,0 +1,10 @@
+$primary:blue;
+
+$secondary:rgb(116, 240, 240);
+
+@mixin flexCenter($dir:row){
+    display: flex;
+    flex-direction: $dir;
+    align-items: center;
+    justify-content:center;
+}

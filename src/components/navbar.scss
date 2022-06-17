@@ -1,0 +1,124 @@
+@import './variable.scss';
+
+
+.navbar{
+    width: 100%;
+    height:100px;
+    box-sizing: border-box;
+
+    &__inner{
+        width:100%;
+        height: 100%;
+        background-color: rgb(28, 9, 73);
+        @include flexCenter();
+        justify-content: space-between;
+    }
+
+    &__links__container{
+        height: 100%;
+        @include flexCenter();
+        justify-content: space-between;
+        width:60%;
+       
+        
+        .logo__container{
+            width:35%;
+            height:100%;
+            @include flexCenter;
+            
+            .logo{
+                font-weight: 700;
+                font-size:25px;
+                color:white;
+            }
+        }
+
+        .navbar__links{
+            width:65%;
+            height:100%;
+            @include flexCenter();
+            color:white;
+
+            ul{
+                width: 80%;
+                @include flexCenter;
+                justify-content: space-around;
+                text-decoration: none;
+                list-style: none;
+                
+                li{
+                    cursor:pointer;
+                    transition:1s linear ease-in;
+                    font-size:16px;
+                    font-weight: 800;
+                }
+                li:hover{
+                    transform:scale(1.1);
+                }
+            }
+        }
+
+    }
+
+    .navbar__user-details{
+        @include flexCenter;
+        width:40%;
+        height:100%;
+        justify-content: flex-end;
+
+        .user__inner{
+            width:40%;
+            height:85%;
+            @include flexCenter();
+            justify-content: space-between;
+            background-color: rgb(83, 49, 238);
+            margin-right: 18px;
+            border-radius: 20px;
+
+
+            .email_logo_container{
+                height:45px;
+                width:45px;
+                min-width: 45px;
+                min-height: 45px;
+                background-color:$secondary;
+                margin:0px 10px;
+                border-radius: 50% 50% 50% 0;
+                @include flexCenter;
+
+                .email_logo{
+                    width:80%;
+                    height: 80%;
+                    @include flexCenter;
+                    border-radius: 50%;
+                    background-color: $primary;
+                    color:white;
+                }
+            }
+            
+            .user_container{
+                @include flexCenter(column);
+                width:40%;
+                height: 100%;
+                color:white;
+                .user{
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                .points{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                
+            }
+            .user_pic{
+                @include flexCenter;
+                width:80px;
+                height: 80px;
+                background-color: rgb(252, 250, 250);
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+}
